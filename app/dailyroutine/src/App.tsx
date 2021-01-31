@@ -101,6 +101,7 @@ function App() {
   useEffect(() => {
     fetch(`${API_HOST}history/`, {
       method: 'GET',
+      mode: 'no-cors',
     }).then(response => response.json())
       .then(data => setMemos(data));
   }, []);
@@ -111,6 +112,7 @@ function App() {
     };
     fetch(`${API_HOST}history/historyUpdate/${memo.id}/`, {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-type': 'application/json',
       },
@@ -120,7 +122,7 @@ function App() {
       .then(data => {
         fetch(`${API_HOST}history/`, {
           method: 'GET',
-
+          mode: 'no-cors',
         }).then(response => response.json())
           .then(data => setMemos(data))
       })
@@ -136,6 +138,7 @@ function App() {
     };
     fetch(`${API_HOST}history/historyCreate/`, {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-type': 'application/json',
       },
@@ -155,6 +158,7 @@ function App() {
   const deleteMemo = (memo: any) => {
     fetch(`${API_HOST}history/historyDelete/${memo.id}/`, {
       method: 'DELETE',
+      mode: 'no-cors',
       headers: {
         'Content-type': 'application/json',
       }
@@ -175,6 +179,7 @@ function App() {
     };
     fetch(`${API_HOST}history/historyUpdate/${memo.id}/`, {
       method: 'POST',
+      mode: 'no-cors',
       headers: {
         'Content-type': 'application/json',
       },
