@@ -150,7 +150,7 @@ function App() {
       .then(data => {
         fetch(`${API_HOST}history/`, {
           method: 'GET',
-
+          mode: 'no-cors',
         }).then(response => response.json())
           .then(data => setMemos(data))
       })
@@ -170,6 +170,7 @@ function App() {
       .then(data => {
         fetch(`${API_HOST}history/`, {
           method: 'GET',
+          mode: 'no-cors',
         }).then(response => response.json())
           .then(data => setMemos(data))
       })
@@ -193,7 +194,7 @@ function App() {
       .then(data => {
         fetch(`${API_HOST}history/`, {
           method: 'GET',
-
+          mode: 'no-cors',
         }).then(response => response.json())
           .then(data => setMemos(data))
       })
