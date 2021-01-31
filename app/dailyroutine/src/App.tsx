@@ -115,7 +115,7 @@ function App() {
       mode: 'no-cors',
       headers: {
         'Accept': 'application/json',
-        'Content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(dataChange)
     })
@@ -141,10 +141,10 @@ function App() {
       method: 'POST',
       mode: 'no-cors',
       headers: {
-        // 'Accept': 'application/json',
-        // 'Content-type': 'application/json',
-        'Accept': "application/json, text/plain, */*",
-        'Content-Type': "application/json;charset=utf-8"
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        // 'Accept': "application/json, text/plain, */*",
+        // 'Content-Type': "application/json;charset=utf-8"
       },
       body: JSON.stringify(dataChange)
     })
@@ -165,7 +165,7 @@ function App() {
       mode: 'no-cors',
       headers: {
         'Accept': 'application/json',
-        'Content-type': 'application/json',
+        'Content-Type': 'application/json',
       }
     })
       .then(response => response.json())
@@ -188,7 +188,7 @@ function App() {
       mode: 'no-cors',
       headers: {
         'Accept': 'application/json',
-        'Content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(dataChange)
     })
