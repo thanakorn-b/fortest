@@ -141,8 +141,10 @@ function App() {
       method: 'POST',
       mode: 'no-cors',
       headers: {
-        'Accept': 'application/json',
-        'Content-type': 'application/json',
+        // 'Accept': 'application/json',
+        // 'Content-type': 'application/json',
+        'Accept': "application/json, text/plain, */*",
+        'Content-Type': "application/json;charset=utf-8"
       },
       body: JSON.stringify(dataChange)
     })
