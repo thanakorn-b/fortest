@@ -114,6 +114,7 @@ function App() {
       method: 'POST',
       mode: 'no-cors',
       headers: {
+        'Accept': 'application/json',
         'Content-type': 'application/json',
       },
       body: JSON.stringify(dataChange)
@@ -140,6 +141,7 @@ function App() {
       method: 'POST',
       mode: 'no-cors',
       headers: {
+        'Accept': 'application/json',
         'Content-type': 'application/json',
       },
       body: JSON.stringify(dataChange)
@@ -160,6 +162,7 @@ function App() {
       method: 'DELETE',
       mode: 'no-cors',
       headers: {
+        'Accept': 'application/json',
         'Content-type': 'application/json',
       }
     })
@@ -181,6 +184,7 @@ function App() {
       method: 'POST',
       mode: 'no-cors',
       headers: {
+        'Accept': 'application/json',
         'Content-type': 'application/json',
       },
       body: JSON.stringify(dataChange)
